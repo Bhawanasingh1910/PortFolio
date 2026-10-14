@@ -6,7 +6,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1, viewport-fit=cover"
     />
-    <title>Bhawana | Full Stack &amp; AI Developer</title>
+    <title>Bhawana | Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,800;1,9..144,600&family=DM+Sans:wght@400;500;700&display=swap"
@@ -22,16 +22,16 @@
     </nav>
 
     <header class="hero2" id="hero">
-      <h1 class="ghost" style="--k: -26">Bhawana</h1>
+      <div class="ghost" aria-hidden="true" style="--k: -26">Bhawana</div>
       <div class="hl" style="--k: 10">
-        <p class="kick">Full Stack &amp; AI Developer</p>
-        <p class="lead">
-          I turn rough ideas into polished products people enjoy using.
-        </p>
+        <p class="kick">Hi, I'm</p>
+        <h1 class="lead">Bhawana</h1>
         <p class="sub">
-          Computer Science at IGDTUW, Delhi. Currently building with React,
-          Node.js and the Gemini API.
+          I turn ideas into full-stack web apps, from the first line of code to
+          deployment. Grounded in Java and DSA, I love creating thoughtful
+          products with AI-powered features.
         </p>
+
         <div class="btns">
           <a class="btn p" href="#work">See my work</a
           ><a class="btn" href="#contact">Get in touch</a>
@@ -45,37 +45,135 @@
               alt="Portrait of Bhawana smiling"
               src="images/bhawana.jpg"
             />
+            <span class="photo-note" aria-hidden="true">
+              ignore my pimples :)
+            </span>
           </div>
         </div>
-        <span class="chip" style="--k: 44; left: -2%; top: 12%">React</span>
-        <span class="chip" style="--k: 48; right: -4%; top: 58%">Node.js</span>
-        <span class="chip" style="--k: 40; left: -7%; bottom: 14%">Python</span>
+        <a
+          class="chip"
+          href="https://drive.google.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          style="--k: 44; left: 0%; top: 12%"
+          >Resume</a
+        >
+        <a
+          class="chip"
+          href="https://www.instagram.com/bhawanasingh19_/"
+          target="_blank"
+          rel="noopener noreferrer"
+          style="--k: 48; right: 0%; top: 58%"
+          aria-label="Instagram: @bhawanasingh19_"
+          >@bhawanasingh19_</a
+        >
+        <a
+          class="chip"
+          href="https://drive.google.com/file/d/1-51bnky8ZFpmyl0nss53vZYH9lVHOLeB/view?usp=sharing"
+          target="_blank"
+          rel="noopener noreferrer"
+          style="--k: 40; left: -9%; bottom: 14%"
+          >CGPA 8.18</a
+        >
       </div>
       
     </header>
 
     <section id="about">
       <h2>A little about me</h2>
-      <p style="max-width: 40em; color: var(--soft)">
-        I'm a B.Tech Computer Science student (2024 to 2028) at Indira Gandhi
-        Delhi Technical University for Women. I like turning ideas into products
-        people can actually use, whether that's an AI that holds a group
-        discussion or a booking site that works end to end. I also run events,
-        so I'm used to keeping teams and deadlines on track.
-      </p>
+      <div class="about-layout">
+        <div class="about-copy">
+          <p>
+            I'm a third-year B.Tech Computer Science student at Indira Gandhi
+            Delhi Technical University for Women (2024–2028), with a CGPA of 8.18.
+          </p>
+          <p>
+            I started with Java and problem-solving, and curiosity pulled me into
+            building things people can actually use. I love learning how things
+            work, from a single line of code to a full system.
+          </p>
+          <p>
+            Away from the screen, you’ll find me cooking, stitching clothes,
+            cycling, painting or maybe travelling.
+          </p>
+        </div>
+        
+
+<aside class="education" aria-labelledby="education-title">
+  <h3 id="education-title">Education</h3>
+
+  <div class="education-list">
+    <article class="education-item">
+      <span class="education-year">2024–2028</span>
+      <p><strong>B.Tech CSE</strong> · IGDTUW, Delhi</p>
+      <strong class="education-score">8.18 CGPA</strong>
+    </article>
+
+    <article class="education-item">
+      <span class="education-year">2022</span>
+      <p><strong>Class XII</strong> · GGSSS, Delhi</p>
+      <strong class="education-score">75%</strong>
+    </article>
+
+    <article class="education-item">
+      <span class="education-year">2020</span>
+      <p><strong>Class X</strong> · GGSSS, Delhi</p>
+      <strong class="education-score">83%</strong>
+    </article>
+  </div>
+</aside>
+
+
+      </div>
       <div class="stats">
-        <div class="stat"><b>200+</b>DSA problems solved</div>
+        <div class="stat"><b>8.18</b>CGPA at IGDTUW</div>
+        <div class="stat"><b>300+</b>DSA problems solved</div>
         <div class="stat"><b>20+</b>college events organised</div>
         <div class="stat">
           <b>1.18 lakh</b>Infosys STEM Stars chosen from 30 lakh+
         </div>
-        <div class="stat"><b>8.12</b>CGPA at IGDTUW</div>
       </div>
     </section>
 
     <section id="work">
       <h2>Things I've built</h2>
       <div class="grid">
+        <article class="tilt">
+          <h3>NiveshX</h3>
+          <small>Full-stack investment and trading platform</small>
+          <ul>
+            <li>
+              Explore a landing website and a separate trading dashboard with watchlist, holdings, positions, orders and funds.
+            </li>
+            <li>
+              Place demo buy orders from the dashboard. They go through Express APIs, then stored in MongoDB.
+            </li>
+            <li>
+              See your holdings as a portfolio chart, with everything deployed live on Vercel and Render.
+            </li>
+          </ul>
+          <div class="tags">
+            <span>React</span><span>Node.js</span><span>Express.js</span
+            ><span>MongoDB</span><span>Chart.js</span><span>Material UI</span>
+          </div>
+          <div class="links">
+            <a
+              href="https://github.com/Bhawanasingh1910/NiveshX"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub repository for NiveshX"
+              >GitHub</a
+            >
+            <a
+              href="https://nivesh-x-q1dg.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Live demo for NiveshX"
+              >Live Demo</a
+            >
+          </div>
+        </article>
+
         <article class="tilt">
           <h3>Multi-Agent GD</h3>
           <small>AI group discussion practice platform</small>
@@ -98,9 +196,59 @@
             ><span>Gemini API</span><span>Web Speech API</span>
           </div>
           <div class="links">
-            <a href="#" aria-label="GitHub repo for Multi-Agent GD">GitHub</a>
+            <a
+              href="https://github.com/Bhawanasingh1910/Multi-Agent-GD"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub repository for Multi-Agent GD"
+              >GitHub</a
+            >
+            <a
+              href="https://multi-agent-gd.onrender.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Live demo for Multi-Agent GD"
+              >Live Demo</a
+            >
           </div>
         </article>
+
+        <article class="tilt">
+          <h3>SyncTalk</h3>
+          <small>Real-time video conferencing platform</small>
+          <ul>
+            <li>
+              Create or join video meetings with a meeting code, with live video and audio for multiple users.
+            </li>
+            <li>
+              Chat in real time during the call, and check your meeting history afterwards.
+            </li>
+            <li>
+              Sign up and log in securely (bcrypt and token-based auth), with the frontend on Vercel and the backend on Render.
+            </li>
+          </ul>
+          <div class="tags">
+            <span>React</span><span>Node.js</span><span>Express.js</span
+            ><span>MongoDB</span><span>Socket.IO</span><span>WebRTC</span><span>Material UI</span>
+          </div>
+          <div class="links">
+            <a
+              href="https://github.com/Bhawanasingh1910/SyncTalk"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub repository for SyncTalk"
+              >GitHub</a
+            >
+            <a
+              href="https://sync-talk-delta.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Live demo for SyncTalk"
+              >Live Demo</a
+            >
+          </div>
+        </article>
+
         <article class="tilt">
           <h3>Ride Route</h3>
           <small>Digital vehicle showroom</small>
@@ -122,7 +270,20 @@
             ><span>Node.js</span><span>Express.js</span>
           </div>
           <div class="links">
-            <a href="#">GitHub</a><a href="#">Live demo</a>
+            <a
+              href="https://github.com/Bhawanasingh1910/ride-route"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub repository for Ride Route"
+              >GitHub</a
+            >
+            <a
+              href="https://bhawanasingh1910.github.io/ride-route/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Live demo for Ride Route"
+              >Live Demo</a
+            >
           </div>
         </article>
       </div>
@@ -132,8 +293,18 @@
       <h2>Where I've worked</h2>
       <div class="tl">
         <article>
+  <small>Summer 2026</small>
+  <h3>Intern, Full Stack Development &amp; Generative AI</h3>
+  <p><b>Anveshan Foundation, IGDTUW</b></p>
+  <p style="color: var(--soft); max-width: 44em">
+    Developed Multi-Agent GD, an AI-powered group discussion practice platform,
+    integrating multiple AI participants, AI-generated responses, and live
+    discussion transcripts using Node.js, Express.js, MongoDB, and Generative AI.
+  </p>
+</article>
+        <article>
           <small>2025</small>
-          <h3>Summer Intern, AI / Full Stack</h3>
+          <h3>Summer Intern, AI &amp;/ Full Stack</h3>
           <p><b>Infosys Springboard, Vidzai Digital</b></p>
           <p style="color: var(--soft); max-width: 44em">
             Built an Electronic Health Records system in Python and Streamlit
@@ -145,7 +316,7 @@
         </article>
         <article>
           <small>2024</small>
-          <h3>Core Member, Event Management Team</h3>
+          <h3>Member, Event Management Team</h3>
           <p><b>Synergy Sports Society, IGDTUW</b></p>
           <p style="color: var(--soft); max-width: 44em">
             Planned and ran logistics for 20+ college-level events, working with
@@ -192,18 +363,42 @@
       <h2>Wins</h2>
       <div class="ach">
         <div>
-          <b>Winner, Innovertex 3.0 Reimagination Hackathon (IRCTC track)</b
-          >Reimagined the IRCTC platform and built a frontend that made ticket
-          booking simpler to navigate.
+          <div class="ach-heading">
+            <b>Winner, Innovertex 3.0 Reimagination Hackathon (IRCTC track)</b>
+            <a
+              class="ach-link"
+              href="https://lnkd.in/p/gkfNSEmc"
+              target="_blank"
+              rel="noopener noreferrer"
+              >View post <span aria-hidden="true">↗</span></a
+            >
+          </div>
+          <p>
+            Reimagined the IRCTC platform and built a frontend that made ticket
+            booking simpler to navigate.
+          </p>
         </div>
         <div>
-          <b>Infosys Foundation STEM Stars Scholar</b>One of roughly 1.18 lakh
-          scholars selected from over 30 lakh applicants in a multi-stage
-          process.
+          <div class="ach-heading">
+            <b>Infosys Foundation STEM Stars Scholar</b>
+            <a
+              class="ach-link"
+              href="https://lnkd.in/p/geEDf9ts"
+              target="_blank"
+              rel="noopener noreferrer"
+              >View post <span aria-hidden="true">↗</span></a
+            >
+          </div>
+          <p>
+            One of roughly 1.18 lakh scholars selected from over 30 lakh
+            applicants in a multi-stage process.
+          </p>
         </div>
         <div>
-          <b>200+ problems on LeetCode and HackerRank</b>Across arrays, strings,
-          trees, graphs and dynamic programming.
+          <b>300+ problems on LeetCode and HackerRank</b>
+          <p>
+            Across arrays, strings, trees, graphs and dynamic programming.
+          </p>
         </div>
       </div>
     </section>
@@ -214,11 +409,32 @@
         Open to internships and projects.
       </p>
       <div class="btns" style="justify-content: center">
-        <a class="btn p" href="mailto:bhawana049btcse24@igdtuw.ac.in"
+        <a
+          class="btn p"
+          href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=bhawana123imp@gmail.com"
+          target="_blank"
+          rel="noopener noreferrer"
           >Email me</a
         >
-        <a class="btn" href="#">LinkedIn</a><a class="btn" href="#">GitHub</a
-        ><a class="btn" href="#">LeetCode</a>
+        <a
+          class="btn"
+          href="https://www.linkedin.com/in/bhawana-singh-289463328/"
+          target="_blank"
+          rel="noopener noreferrer"
+          >LinkedIn</a
+        ><a
+          class="btn"
+          href="https://github.com/Bhawanasingh1910"
+          target="_blank"
+          rel="noopener noreferrer"
+          >GitHub</a
+        ><a
+          class="btn"
+          href="https://leetcode.com/u/BHAWANA19__/"
+          target="_blank"
+          rel="noopener noreferrer"
+          >LeetCode</a
+        >
       </div>
     </section>
     <footer>Designed and built by Bhawana</footer>

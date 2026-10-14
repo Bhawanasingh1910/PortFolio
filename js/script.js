@@ -33,23 +33,28 @@
     card.style.transform = "rotateY(0deg) rotateX(0deg)";
   });
 
-  /* ---- project cards tilt on hover ---- */
-  document.querySelectorAll(".tilt").forEach(function (c) {
-    c.addEventListener("pointermove", function (e) {
-      var r = c.getBoundingClientRect();
-      var x = (e.clientX - r.left) / r.width - 0.5;
-      var y = (e.clientY - r.top) / r.height - 0.5;
-      c.style.transform =
-        "rotateY(" +
-        x * 10 +
-        "deg) rotateX(" +
-        -y * 10 +
-        "deg) translateZ(8px)";
-    });
-    c.addEventListener("pointerleave", function () {
-      c.style.transform = "";
-    });
-  });
+  /* ---- cards tilt on hover ---- */
+  if (!reduce) {
+    document
+      .querySelectorAll(".tilt, .skills > div, .ach > div")
+      .forEach(function (c) {
+        c.addEventListener("pointermove", function (e) {
+          if (e.pointerType === "touch") return;
+          var r = c.getBoundingClientRect();
+          var x = (e.clientX - r.left) / r.width - 0.5;
+          var y = (e.clientY - r.top) / r.height - 0.5;
+          c.style.transform =
+            "rotateY(" +
+            x * 10 +
+            "deg) rotateX(" +
+            -y * 10 +
+            "deg) translateY(-3px) translateZ(10px)";
+        });
+        c.addEventListener("pointerleave", function () {
+          c.style.transform = "";
+        });
+      });
+  }
 
   /* ---- photo slides down, shrinks and fades while scrolling ---- */
   /* ---- photo drifts down, shrinks and fades while scrolling (smoothed) ---- */
