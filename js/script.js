@@ -8,6 +8,33 @@
     return Math.max(a, Math.min(b, v));
   }
 
+  var themeButton = document.getElementById("theme-toggle");
+  var root = document.documentElement;
+  var initialTheme =
+    root.dataset.theme ||
+    (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+
+  function updateTheme(theme, savePreference) {
+    root.dataset.theme = theme;
+    themeButton.textContent = theme === "dark" ? "☼" : "☾";
+    themeButton.setAttribute(
+      "aria-label",
+      "Switch to " + (theme === "dark" ? "light" : "dark") + " theme",
+    );
+    if (savePreference) {
+      try {
+        localStorage.setItem("portfolio-theme", theme);
+      } catch (error) {
+        console.error("Could not save the theme preference.", error);
+      }
+    }
+  }
+
+  updateTheme(initialTheme, false);
+  themeButton.addEventListener("click", function () {
+    updateTheme(root.dataset.theme === "dark" ? "light" : "dark", true);
+  });
+
   /* ---- photo follows the cursor (always on) ---- */
   window.addEventListener("pointermove", function (e) {
     var x = (e.clientX / window.innerWidth) * 2 - 1; /* -1 left ... +1 right */

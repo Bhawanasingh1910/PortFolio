@@ -86,6 +86,34 @@ nav a:hover {
   background: var(--rose);
   color: #fff;
 }
+.theme-toggle {
+  position: fixed;
+  top: calc(env(safe-area-inset-top, 0px) + 12px);
+  left: 16px;
+  z-index: 21;
+  display: grid;
+  width: 42px;
+  height: 42px;
+  padding: 0;
+  place-items: center;
+  border: 1px solid var(--line);
+  border-radius: 99px;
+  background: var(--card);
+  color: var(--ink);
+  font: inherit;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  transition:
+    background 180ms ease,
+    color 180ms ease,
+    border-color 180ms ease;
+}
+.theme-toggle:hover {
+  background: var(--rose);
+  border-color: var(--rose);
+  color: #fff;
+}
 section {
   padding: 96px 24px;
   max-width: 1120px;

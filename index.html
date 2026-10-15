@@ -7,6 +7,16 @@
       content="width=device-width, initial-scale=1, viewport-fit=cover"
     />
     <title>Bhawana | Portfolio</title>
+    <script>
+      try {
+        const savedTheme = localStorage.getItem("portfolio-theme");
+        if (savedTheme === "light" || savedTheme === "dark") {
+          document.documentElement.dataset.theme = savedTheme;
+        }
+      } catch (error) {
+        console.error("Could not load the saved theme preference.", error);
+      }
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,800;1,9..144,600&family=DM+Sans:wght@400;500;700&display=swap"
@@ -19,6 +29,14 @@
       <a href="#about">About</a><a href="#work">Projects</a
       ><a href="#exp">Experience</a><a href="#skills">Skills</a
       ><a href="#contact">Contact</a>
+      <button
+        class="theme-toggle"
+        id="theme-toggle"
+        type="button"
+        aria-label="Switch to light theme"
+      >
+        ☼
+      </button>
     </nav>
 
     <header class="hero2" id="hero">
