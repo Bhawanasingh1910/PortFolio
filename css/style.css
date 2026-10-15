@@ -5,7 +5,7 @@
   --soft: #7d5878;
   --rose: #ff5fa2;
   --lilac: #b69cff;
-  --butter: #ffe7a3;
+  --butter: #fae55c;
   --card: rgba(255, 255, 255, 0.72);
   --line: rgba(255, 95, 162, 0.25);
   box-sizing: border-box;
@@ -686,6 +686,15 @@ footer {
   --bg2: #f6e1e9;
   --ink: #2e1229;
   --soft: #745a70;
+  --hero-name: #d95f32;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --hero-name: #ffad73;
+  }
+}
+:root[data-theme="dark"] {
+  --hero-name: #ffad73;
 }
 .hero {
   background: radial-gradient(circle at 78% 30%, var(--bg2), transparent 58%);
@@ -882,9 +891,10 @@ footer {
   font:
     italic 600 clamp(38px, 5vw, 64px)/1.05 "Fraunces",
     serif;
-  color: var(--gold);
+  color: var(--hero-name);
   letter-spacing: -0.02em;
   max-width: none;
+  text-shadow: 0 8px 24px color-mix(in srgb, var(--hero-name) 18%, transparent);
 }
 .sub {
   color: var(--soft);
