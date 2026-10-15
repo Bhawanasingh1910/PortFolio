@@ -532,23 +532,28 @@ h2 {
 }
 .skills {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 18px;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 10px;
 }
-.skills div {
-  padding: 22px;
+.skills > div {
+  min-width: 0;
+  padding: 14px;
   border-radius: 24px;
   background: var(--card);
   border: 1px solid var(--line);
 }
 .skills h3 {
-  font-size: 21px;
-  margin-bottom: 12px;
+  font-size: 16px;
+  margin-bottom: 9px;
 }
 .chips {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: 5px;
+}
+.skills .chips span {
+  padding: 4px 8px;
+  font-size: 11px;
 }
 .ach {
   display: grid;
@@ -1148,7 +1153,16 @@ footer {
   }
 }
 
+@media (max-width: 1000px) {
+  .skills {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
 @media (max-width: 600px) {
+  .skills {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
   .education {
     padding: 20px;
   }
@@ -1164,6 +1178,12 @@ footer {
     width: 12px;
     height: 12px;
     border-width: 2px;
+  }
+}
+
+@media (max-width: 400px) {
+  .skills {
+    grid-template-columns: minmax(0, 1fr);
   }
 }
 
