@@ -1,15 +1,17 @@
 # Bhawana
 
-<a href="mailto:bhawana123imp@gmail.com">bhawana123imp@gmail.com</a> | <a href="https://www.linkedin.com/in/bhawana-singh-289463328/" target="_blank" rel="noopener noreferrer">LinkedIn</a> | <a href="https://github.com/Bhawanasingh1910" target="_blank" rel="noopener noreferrer">GitHub</a> | <a href="https://leetcode.com/u/BHAWANA19__/" target="_blank" rel="noopener noreferrer">LeetCode</a> | <a href="https://bhawanasingh1910.github.io/PortFolio/" target="_blank" rel="noopener noreferrer">Portfolio</a>
+[bhawana123imp@gmail.com](mailto:bhawana123imp@gmail.com) | [LinkedIn](https://www.linkedin.com/in/bhawana-singh-289463328/) | [GitHub](https://github.com/Bhawanasingh1910) | [LeetCode](https://leetcode.com/u/BHAWANA19__/) | [Portfolio](https://bhawanasingh1910.github.io/PortFolio/)
 
 ---
 
 ## Education
 
-**Indira Gandhi Delhi Technical University for Women (IGDTUW)** — Delhi<br>
+**Indira Gandhi Delhi Technical University for Women (IGDTUW)** — Delhi
+
 B.Tech in Computer Science and Engineering, CGPA: 8.18 | 2024 – 2028
 
-**Govt. Girls Senior Secondary School** — Delhi<br>
+**Govt. Girls Senior Secondary School** — Delhi
+
 Class XII: 75% (2022) | Class X: 83% (2020)
 
 ---
@@ -18,7 +20,7 @@ Class XII: 75% (2022) | Class X: 83% (2020)
 
 ### NiveshX | React, Node.js, Express.js, MongoDB, Chart.js, Material UI
 
-<a href="https://github.com/Bhawanasingh1910/NiveshX" target="_blank" rel="noopener noreferrer">GitHub</a> | <a href="https://nivesh-x-q1dg.vercel.app/" target="_blank" rel="noopener noreferrer">Live Demo</a>
+[GitHub](https://github.com/Bhawanasingh1910/NiveshX) | [Live Demo](https://nivesh-x-q1dg.vercel.app/)
 
 - Built a full-stack investment and trading platform with a landing website and a separate dashboard covering 5 modules: watchlist, holdings, positions, orders and funds
 - Wired demo buy orders from the dashboard through Express.js REST APIs and stored every order in MongoDB
@@ -26,7 +28,7 @@ Class XII: 75% (2022) | Class X: 83% (2020)
 
 ### Multi-Agent GD | JavaScript, Node.js, Express.js, Groq API, Web Speech API
 
-<a href="https://github.com/Bhawanasingh1910/Multi-Agent-GD" target="_blank" rel="noopener noreferrer">GitHub</a> | <a href="https://multi-agent-gd.onrender.com/" target="_blank" rel="noopener noreferrer">Live Demo</a>
+[GitHub](https://github.com/Bhawanasingh1910/Multi-Agent-GD) | [Live Demo](https://multi-agent-gd.onrender.com/)
 
 - Built an AI group discussion simulator where you practise with 1 to 6 AI participants, each with its own personality and speaking style
 - Made it fully voice-driven using Groq API and Web Speech API, so users speak and listen with zero typing
@@ -34,7 +36,7 @@ Class XII: 75% (2022) | Class X: 83% (2020)
 
 ### SyncTalk | React, Node.js, Express.js, MongoDB, Socket.IO, WebRTC, Material UI
 
-<a href="https://github.com/Bhawanasingh1910/SyncTalk" target="_blank" rel="noopener noreferrer">GitHub</a> | <a href="https://sync-talk-delta.vercel.app/" target="_blank" rel="noopener noreferrer">Live Demo</a>
+[GitHub](https://github.com/Bhawanasingh1910/SyncTalk) | [Live Demo](https://sync-talk-delta.vercel.app/)
 
 - Built a real-time video conferencing app where multiple users create or join a meeting with a code and talk over live video and audio using WebRTC and Socket.IO
 - Added live in-call chat and a meeting history, so people can look back at their past meetings
@@ -76,4 +78,4 @@ Class XII: 75% (2022) | Class X: 83% (2020)
 
 ---
 
-Portfolio Link - <a href="https://bhawanasingh1910.github.io/PortFolio/" target="_blank" rel="noopener noreferrer">https://bhawanasingh1910.github.io/PortFolio/</a>
+Portfolio Link - [https://bhawanasingh1910.github.io/PortFolio/](https://bhawanasingh1910.github.io/PortFolio/)
